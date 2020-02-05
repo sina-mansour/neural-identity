@@ -9,11 +9,14 @@
 # Extra implemented features:
 # Choice of two-tailed/one-tailed test (default: one tailed)
 
+import os
 import numpy as np
 import scipy.spatial as spatial
 import scipy.stats as stats
 import nibabel as nib
 
+
+_main_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 def non_parametric_spin_test(
         data_l1,
@@ -161,8 +164,8 @@ def get_left_right_surface_data_from_cifti(cifti_file, left_surface_file, right_
 def cifti_spin_test(
         cifti_file_1,
         cifti_file_2,
-        left_sphere_file,
-        right_sphere_file,
+        left_sphere_file=os.path.join(_main_dir, 'templates/surface/S1200.L.sphere.32k_fs_LR.surf.gii'),
+        right_sphere_file=os.path.join(_main_dir, 'templates/surface/S1200.R.sphere.32k_fs_LR.surf.gii'),
         permutations=1000,
         random_seed=None,
         method='pearson',
