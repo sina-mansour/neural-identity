@@ -1,9 +1,9 @@
 # Python implementation of spin-test non-parametric spatial correspondence statistic
 # Author of python implementation: Sina Mansour L.
-# contact: sina.mansour.lakouraj@gmail.com
+# Contact: sina.mansour.lakouraj@gmail.com
 
-# re-implementation of the codes from Alexander-Bloch et. al. 2018
-# original source code is available in Matlab
+# Re-implementation of the codes from Alexander-Bloch et. al. 2018
+# Original source code is available in Matlab
 # https://github.com/spin-test/spin-test/
 
 # Extra implemented features:

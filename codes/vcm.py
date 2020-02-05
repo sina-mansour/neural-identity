@@ -1,9 +1,9 @@
 # Python implementation of morphometricity (variance component modelling)
 # Author of python implementation: Sina Mansour L.
-# contact: sina.mansour.lakouraj@gmail.com
+# Contact: sina.mansour.lakouraj@gmail.com
 
-# implementing the codes from sabuncu et. al.
-# original source code is available in Matlab
+# Implementing the codes from sabuncu et. al.
+# Original source code is available in Matlab
 # http://people.csail.mit.edu/msabuncu/morphometricity/Morphometricity.m
 
 import numpy as np
