@@ -1,14 +1,15 @@
-# Python implementation of spin-test non-parametric spatial correspondence statistic
-# Author of python implementation: Sina Mansour L.
-# Contact: sina.mansour.lakouraj@gmail.com
+"""
+Python implementation of spin-test non-parametric spatial correspondence statistic
+Author of python implementation: Sina Mansour L.
+Contact: sina.mansour.lakouraj@gmail.com
 
-# Re-implementation of the codes from Alexander-Bloch et. al. 2018
-# Original source code is available in Matlab
-# https://github.com/spin-test/spin-test/
+Re-implementation of the codes from Alexander-Bloch et. al. 2018
+Original source code is available in Matlab
+https://github.com/spin-test/spin-test/
 
-# Extra implemented features:
-# Choice of two-tailed/one-tailed test (default: one tailed)
-
+Extra implemented features:
+Choice of two-tailed/one-tailed test (default: one tailed)
+"""
 import os
 import numpy as np
 import scipy.spatial as spatial
@@ -17,6 +18,7 @@ import nibabel as nib
 
 
 _main_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+
 
 def non_parametric_spin_test(
         data_l1,
