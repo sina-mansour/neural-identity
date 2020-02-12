@@ -43,7 +43,7 @@ All the code provided is written in **python 3**. The following python packages 
 - nibabel
 - gdist
 
-You may use a [python virtual environment](https://docs.python.org/3/library/venv.html) to install all of the required packages from <span style="color:red">`./codes/requirements.txt`</span>. The following code will take care of virtual evironment setup (run in the git repository main directory):
+You may use a [python virtual environment](https://docs.python.org/3/library/venv.html) to install all of the required packages from <span style="color:red">`./codes/requirements.txt`</span>. The following code will take care of virtual environment setup (run in the git repository main directory):
 
 ```bash
 python3 -m venv venv/
@@ -70,9 +70,17 @@ source venv/bin/activate
 
 ### High-resolution functional connectivity
 
+As mentioned in our paper, we proposed a method for sparsification of dense functional connectomes to be used in high-resolution studies. A python implementation of this method can be found in `./codes/high_resolution.py`. There is also an <span style="color:red">ipython notebook</span> with basic examples on how to use the codes.
+
+Briefly, a sparse high-resolution mask generated from group average data is used as a sparsifier to threshold the individual high-resolution functional connectomes. This approach reduces the required memory (and hence computational load) of processing high-resolution functional connectomes.
+
 ---
 
 ### High-resolution structural connectivity
+
+We have also proposed a method to generate smoothed high-resolution structural connectomes from tractography outputs. A python implementation of this method can be found in `./codes/high_resolution.py`. There is also an <span style="color:red">ipython notebook</span> with basic examples on how to use the codes.
+
+The tractography input is used to locate the endpoints of the streamlines. The endpoints are warped into the standard space and mapped to closest surface vertices. The half incidence matrices (described in detail in our paper) are generated from the endpoint information. The half incidence matrices are first smoothed on the cortical surface mesh. The smoothed incidence information is used to compute the high-resolution structural connectivity on the cortical surface mesh.
 
 ---
 
@@ -104,7 +112,7 @@ y = X \beta + a + \epsilon
 $$
 
 
-Where $y$ is a  $N \times 1$ vector of the selected behavioral characteristic and $N$ is the number of subjects. $X$ is the nuisance covariate matrix, $\beta$ is the fixed effect vector. The subject specific effect vector $a$ is drawn from a multivariate Gaussian distribution $a \sim N(0,\sigma_a^2 S_a)$ with a covariance matrix which is sourced from the test-test similarity matrix $S_{test-test}$. $\sigma_a^2$ is a scaling constant estimated from the data. The noise vector $\epsilon$ is drawn from a zero-mean independent normal distribution with homogeneus variance $\sigma_e^2$. The scaling constant $\sigma_a^2$ is interpreted as the degree in which a measure's similarity contributes to the observed behavioral characteristic. In other words, when $\sigma_a^2$ is large compared to $\sigma_e^2$ the individual behavioral differences are better captured by the measure similarities.
+Where $y$ is a  $N \times 1$ vector of the selected behavioral characteristic and $N$ is the number of subjects. $X$ is the nuisance covariate matrix, $\beta$ is the fixed effect vector. The subject specific effect vector $a$ is drawn from a multivariate Gaussian distribution $a \sim N(0,\sigma_a^2 S_a)$ with a covariance matrix which is sourced from the test-test similarity matrix $S_{test-test}$. $\sigma_a^2$ is a scaling constant estimated from the data. The noise vector $\epsilon$ is drawn from a zero-mean independent normal distribution with homogeneous variance $\sigma_e^2$. The scaling constant $\sigma_a^2$ is interpreted as the degree in which a measure's similarity contributes to the observed behavioral characteristic. In other words, when $\sigma_a^2$ is large compared to $\sigma_e^2$ the individual behavioral differences are better captured by the measure similarities.
 
 ---
 
