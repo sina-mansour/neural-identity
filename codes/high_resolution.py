@@ -158,7 +158,7 @@ def compute_sparse_functional_connectivity_from_timeseries(
 
 def compute_sparse_functional_connectivity_from_dtseries(
         dtseries_file,
-        sparse_mask=_load_sparse(_join_path(_main_dir, 'data/templates/sparse_mask/functional_sparse_mask_1%_density.npz'))):
+        sparse_mask=_load_sparse(_join_path(_main_dir, 'data/sparse_mask/functional_sparse_mask_1%_density.npz'))):
     """
     Compute the high-resolution sparse functional connectivity of a dtseries file using a
     sparsification mask.
