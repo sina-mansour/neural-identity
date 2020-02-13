@@ -29,7 +29,7 @@ def binary_volume_mask_from_surface_vertices(
         outfile,
         thickness=5,
         fwhm=2,
-        cifti_file=os.path.join(_main_dir, 'templates/cifti/ones.dscalar.nii')):
+        cifti_file=os.path.join(_main_dir, 'data/templates/cifti/ones.dscalar.nii')):
     """
     This function generates a binary nifti volume mask (in the space of the
     nifti file) from a surface mesh file (.gii) by smoothing and thresholding

@@ -166,8 +166,8 @@ def get_left_right_surface_data_from_cifti(cifti_file, left_surface_file, right_
 def cifti_spin_test(
         cifti_file_1,
         cifti_file_2,
-        left_sphere_file=os.path.join(_main_dir, 'templates/surface/S1200.L.sphere.32k_fs_LR.surf.gii'),
-        right_sphere_file=os.path.join(_main_dir, 'templates/surface/S1200.R.sphere.32k_fs_LR.surf.gii'),
+        left_sphere_file=os.path.join(_main_dir, 'data/templates/surface/S1200.L.sphere.32k_fs_LR.surf.gii'),
+        right_sphere_file=os.path.join(_main_dir, 'data/templates/surface/S1200.R.sphere.32k_fs_LR.surf.gii'),
         permutations=1000,
         random_seed=None,
         method='pearson',

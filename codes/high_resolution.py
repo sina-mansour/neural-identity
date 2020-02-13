@@ -158,7 +158,7 @@ def compute_sparse_functional_connectivity_from_timeseries(
 
 def compute_sparse_functional_connectivity_from_dtseries(
         dtseries_file,
-        sparse_mask=_load_sparse(_join_path(_main_dir, 'templates/sparse_mask/functional_sparse_mask_1%_density.npz'))):
+        sparse_mask=_load_sparse(_join_path(_main_dir, 'data/templates/sparse_mask/functional_sparse_mask_1%_density.npz'))):
     """
     Compute the high-resolution sparse functional connectivity of a dtseries file using a
     sparsification mask.
@@ -433,7 +433,7 @@ def compute_smoothed_structural_connectivity_over_cifti_from_streamlines(
         left_surface_file,
         right_surface_file,
         rewarp_file,
-        sample_cifti_file=_join_path(_main_dir, 'templates/cifti/ones.dscalar.nii'),
+        sample_cifti_file=_join_path(_main_dir, 'data/templates/cifti/ones.dscalar.nii'),
         sigma=_fwhm2sigma(2),
         epsilon=0.01):
     """
