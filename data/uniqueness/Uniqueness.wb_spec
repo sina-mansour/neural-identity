@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaretSpecFile Version="1.0">
+   <MetaData>
+   </MetaData>
+   <DataFile Structure="CortexLeft"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.L.flat.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexLeft"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.L.inflated_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexLeft"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.L.midthickness_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexLeft"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.L.pial_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexLeft"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.L.sphere.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexLeft"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.L.very_inflated_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexLeft"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.L.white_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexRight"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.R.flat.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexRight"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.R.inflated_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexRight"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.R.midthickness_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexRight"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.R.pial_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexRight"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.R.sphere.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexRight"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.R.very_inflated_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="CortexRight"
+             DataFileType="SURFACE"
+             Selected="true">
+      ../templates/surface/S1200.R.white_MSMAll.32k_fs_LR.surf.gii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_LABEL"
+             Selected="true">
+      ../templates/atlas/Glasser360.32k_fs_LR.dlabel.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_LABEL"
+             Selected="true">
+      ../templates/atlas/Gordon333.32k_fs_LR.dlabel.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      ../templates/cifti/hcp.gradients.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Glasser/cortical_curvature_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Glasser/cortical_thickness_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Glasser/functional_connectivity_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Glasser/myelination_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Glasser/structural_connectivity_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Glasser/sulcal_depth_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Gordon/cortical_curvature_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Gordon/cortical_thickness_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Gordon/functional_connectivity_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Gordon/myelination_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Gordon/structural_connectivity_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Gordon/sulcal_depth_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      High resolution/cortical_curvature_uniqueness.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      High resolution/cortical_thickness_uniqueness.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      High resolution/dense_functional_connectivity_uniqueness.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      High resolution/myelination_uniqueness.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      High resolution/sparse_functional_connectivity_uniqueness.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      High resolution/structural_connectivity_uniqueness.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      High resolution/sulcal_depth_uniqueness.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Glasser/cortical_curvature_holistic_mean_uniqueness_glasser_mean_IV.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Glasser/cortical_thickness_holistic_mean_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Glasser/functional_connectivity_holistic_mean_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Glasser/myelination_holistic_mean_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Glasser/structural_connectivity_holistic_mean_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Glasser/sulcal_depth_holistic_mean_uniqueness_glasser.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Gordon/cortical_curvature_holistic_mean_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Gordon/cortical_thickness_holistic_mean_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Gordon/functional_connectivity_holistic_mean_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Gordon/myelination_holistic_mean_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Gordon/structural_connectivity_holistic_mean_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Gordon/sulcal_depth_holistic_mean_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="Invalid"
+             DataFileType="VOLUME"
+             Selected="true">
+      ../templates/volume/S1200_AverageT1w_restore.nii.gz
+   </DataFile>
+</CaretSpecFile>
