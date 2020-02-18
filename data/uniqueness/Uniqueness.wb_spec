@@ -185,11 +185,6 @@
    <DataFile Structure="All"
              DataFileType="CONNECTIVITY_DENSE_SCALAR"
              Selected="true">
-      Holistic mean/Glasser/cortical_curvature_holistic_mean_uniqueness_glasser_mean_IV.dscalar.nii
-   </DataFile>
-   <DataFile Structure="All"
-             DataFileType="CONNECTIVITY_DENSE_SCALAR"
-             Selected="true">
       Holistic mean/Glasser/cortical_thickness_holistic_mean_uniqueness_glasser.dscalar.nii
    </DataFile>
    <DataFile Structure="All"
@@ -241,6 +236,11 @@
              DataFileType="CONNECTIVITY_DENSE_SCALAR"
              Selected="true">
       Holistic mean/Gordon/sulcal_depth_holistic_mean_uniqueness_gordon.dscalar.nii
+   </DataFile>
+   <DataFile Structure="All"
+             DataFileType="CONNECTIVITY_DENSE_SCALAR"
+             Selected="true">
+      Holistic mean/Glasser/cortical_curvature_holistic_mean_uniqueness_glasser.dscalar.nii
    </DataFile>
    <DataFile Structure="Invalid"
              DataFileType="VOLUME"
