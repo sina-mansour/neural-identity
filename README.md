@@ -14,17 +14,16 @@ This repository contains:
 
 ### Codes:
 
-- Codes used for generation of high-resolution sparse functional connectomes: <span style="color:red">`./codes/high_resolution.py`</span>
-- Codes used for generation of high-resolution network-smoothed structural connectomes: <span style="color:red">`./codes/high_resolution.py`</span>
-- Implementation of **spintest** non-parametric spatial correspondence test in python: <span style="color:red">`./codes/spintest.py`</span>
-- Implementation of variance component modelling (**VCM**) in python: <span style="color:red">`./codes/vcm.py`</span>
-- Sample script we used to run mrtrix tractography: <span style="color:red">`./codes/tractography/mrtrix_tractography.sh`</span>
+- Codes used for generation of high-resolution sparse functional connectomes:`./codes/high_resolution.py`
+- Codes used for generation of high-resolution network-smoothed structural connectomes: `./codes/high_resolution.py`
+- Implementation of **spintest** non-parametric spatial correspondence test in python: `./codes/spintest.py`
+- Implementation of variance component model (**VCM**) in python: `./codes/vcm.py`
+- Sample script we used to run mrtrix tractography: `./codes/tractography/mrtrix_tractography.sh`
 
 ### Data:
 
 - Surface maps of the expressed neural uniqueness from different modalities
-- Samples of the high-resolution group average connectomes
-- Link and information on how to access the individual high-resolution connectomes
+- Individual high-resolution connectomes
 - Sparse mask used to sparsify functional connectomes
 
 ### Other:
@@ -45,7 +44,7 @@ All the code provided is written in **python 3**. The following python packages 
 - nibabel
 - gdist
 
-You may use a [python virtual environment](https://docs.python.org/3/library/venv.html) to install all of the required packages from <span style="color:red">`./codes/requirements.txt`</span>. The following code will take care of virtual environment setup (run in the git repository main directory):
+You may use a [python virtual environment](https://docs.python.org/3/library/venv.html) to install all of the required packages from `./codes/requirements.txt`. The following code will take care of virtual environment setup (run in the git repository's main directory):
 
 ```bash
 python3 -m venv venv/
@@ -143,6 +142,18 @@ There are 3 different sets of uniqueness maps in total:
 - The high-resolution uniqueness maps are in: `./data/uniqueness/High resolution`
 - The atlas-level uniqueness maps generated from Glasser and Gordon atlas are in: `./data/uniqueness/glasser` and `./data/uniqueness/gordon` respectively
 - The holistic approach (high-resolution maps averaged on atlases) can be found in: `./data/uniqueness/Holistic mean`
+
+---
+
+### High-resolution connectomes
+
+All the individual high-resolution connectomes produced with our pipeline could be accessed in our [publicly accessible S3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html). The directory structure is similar to the HCP directory structure. 
+
+---
+
+### Functional connectivity sparsifier
+
+We utilized a sparse mask generated from the group average dense functional connectivity for sparsification of individual connectomes. The binary mask can be found in `./data/sparse_mask/functional_sparse_mask_1%_density.npz`. This is saved sparse matrix that can be loaded using [scipy.sparse.load_npz](https://docs.scipy.org/doc/scipy-1.1.0/reference/generated/scipy.sparse.load_npz.html).
 
 ---
 
