@@ -136,7 +136,6 @@ def non_parametric_spin_test(
         'corellation r': real_rho,
         'parametric p-val': parametric_p,
         'non-parametric p-val': np_pval,
-        'null distribution of r values': null_rhos,
     }
 
 
