@@ -28,7 +28,7 @@ This repository contains:
 
 ### Other:
 
-- Simple ipython notebooks to provide examples on how to use the codes
+- Simple [Jupyter notebooks](https://github.com/sina-mansour/neural-identity/tree/master/notebooks) to provide examples on how to use the codes (or check the [reproducible interactive binder image](https://mybinder.org/v2/gh/sina-mansour/neural-identity/master))
 
 ---
 
@@ -99,7 +99,7 @@ This is a statistical test for correspondence of two spatial cortical surface ma
 
 ### VCM
 
-A python implementation of variance component model (VCM) used in our paper to draw inference about behavior prediction performance can be found in `./codes/vcm.py`. This [ipython notebook](https://nbviewer.jupyter.org/github/sina-mansour/neural-identity/blob/master/notebooks/VCM.ipynb) provides a sample example on how VCM could be used.
+A python implementation of variance component model (VCM) used in our paper to draw inference about behavior prediction performance can be found in `./codes/vcm.py`. We have also provided an example [ipython notebook](https://github.com/sina-mansour/neural-identity/blob/master/notebooks/VCM.ipynb) on how VCM is used. You may open this notebook using its [binder image](https://hub.gke.mybinder.org/user/sina-mansour-neural-identity-czo0ek04/notebooks/notebooks/VCM.ipynb) for a hands-on example.
 
 This method was originally proposed and implemented as a MATLAB package in the following article:
 
