@@ -5,6 +5,7 @@ dependencies:
   - scipy
   - numpy
   - nibabel
+  - cython
   - pip
   - pip:
     - sklearn
