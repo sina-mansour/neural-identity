@@ -5,6 +5,7 @@ dependencies:
   - scipy
   - numpy
   - nibabel
+  - seaborn
   - cython
   - pip
   - pip:
