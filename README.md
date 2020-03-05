@@ -25,6 +25,7 @@ This repository contains:
 - Surface maps of the expressed neural uniqueness from different modalities: [`./data/uniqueness/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/)
 - Individual high-resolution connectomes can be downloaded from [our public s3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html)
 - Sparse mask used to sparsify functional connectomes: [`./data/sparse_mask/`](https://github.com/sina-mansour/neural-identity/blob/master/data/sparse_mask/)
+- Supplementary information of our indexing and labels: [`./data/supplementary`](https://github.com/sina-mansour/neural-identity/blob/master/data/suplementary)
 
 ### Other:
 
@@ -147,7 +148,7 @@ There are 3 different sets of uniqueness maps in total:
 
 ### High-resolution connectomes
 
-All the individual high-resolution connectomes produced with our pipeline could be accessed in our [publicly accessible S3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html). The directory structure is similar to the HCP directory structure. 
+All the individual high-resolution connectomes produced with our pipeline could be accessed in our [publicly accessible S3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html). The directory structure is similar to the HCP directory structure. The connectomes are saved as sparse matrices that can be loaded using [scipy.sparse.load_npz](https://docs.scipy.org/doc/scipy-1.1.0/reference/generated/scipy.sparse.load_npz.html).
 
 ---
 
@@ -157,3 +158,11 @@ We utilized a sparse mask generated from the group average dense functional conn
 
 ---
 
+### Supplementary data
+
+As well as the data mentioned above;
+
+- We have provided the label indices for the two atlases used in our study.
+- We have also provided the exact subject IDs comprising our **test**, and **retest** datasets
+
+These are provided as json files located in [`./data/supplementary`](https://github.com/sina-mansour/neural-identity/blob/master/data/suplementary).
