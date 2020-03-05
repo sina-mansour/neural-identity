@@ -72,7 +72,7 @@ source venv/bin/activate
 
 ### High-resolution functional connectivity
 
-As mentioned in our paper, we proposed a method for sparsification of dense functional connectomes to be used in high-resolution studies. A python implementation of this method can be found in [`./codes/high_resolution.py`](https://github.com/sina-mansour/neural-identity/blob/master/codes/high_resolution.py). There is also an <span style="color:red">ipython notebook</span> with basic examples on how to use the codes.
+As mentioned in our paper, we proposed a method for sparsification of dense functional connectomes to be used in high-resolution studies. A python implementation of this method can be found in [`./codes/high_resolution.py`](https://github.com/sina-mansour/neural-identity/blob/master/codes/high_resolution.py).
 
 Briefly, a sparse high-resolution mask generated from group average data is used as a sparsifier to threshold the individual high-resolution functional connectomes. This approach reduces the required memory (and hence computational load) of processing high-resolution functional connectomes.
 
@@ -80,7 +80,7 @@ Briefly, a sparse high-resolution mask generated from group average data is used
 
 ### High-resolution structural connectivity
 
-We have also proposed a method to generate smoothed high-resolution structural connectomes from tractography outputs. A python implementation of this method can be found in [`./codes/high_resolution.py`](https://github.com/sina-mansour/neural-identity/blob/master/codes/high_resolution.py). There is also an <span style="color:red">ipython notebook</span> with basic examples on how to use the codes.
+We have also proposed a method to generate smoothed high-resolution structural connectomes from tractography outputs. A python implementation of this method can be found in [`./codes/high_resolution.py`](https://github.com/sina-mansour/neural-identity/blob/master/codes/high_resolution.py).
 
 The tractography input is used to locate the endpoints of the streamlines. The endpoints are warped into the standard space and mapped to closest surface vertices. The half incidence matrices (described in detail in our paper) are generated from the endpoint information. The half incidence matrices are first smoothed on the cortical surface mesh. The smoothed incidence information is used to compute the high-resolution structural connectivity on the cortical surface mesh.
 
@@ -140,15 +140,15 @@ The localized uniqueness measures mapped for different neuroimaging modalities (
 
 There are 3 different sets of uniqueness maps in total:
 
-- The high-resolution uniqueness maps are in: [`./data/uniqueness/High resolution`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/High resolution)
-- The atlas-level uniqueness maps generated from Glasser and Gordon atlas are in: [`./data/uniqueness/glasser`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/glasser) and [`./data/uniqueness/gordon`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/gordon) respectively
-- The holistic approach (high-resolution maps averaged on atlases) can be found in: [`./data/uniqueness/Holistic mean`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/Holistic mean)
+- The high-resolution uniqueness maps are in: [`./data/uniqueness/High resolution/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/High resolution/)
+- The atlas-level uniqueness maps generated from Glasser and Gordon atlas are in: [`./data/uniqueness/glasser/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/glasser/) and [`./data/uniqueness/gordon/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/gordon/) respectively
+- The holistic approach (high-resolution maps averaged on atlases) can be found in: [`./data/uniqueness/Holistic mean/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/Holistic mean/)
 
 ---
 
 ### High-resolution connectomes
 
-All the individual high-resolution connectomes produced with our pipeline could be accessed in our [publicly accessible S3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html). The directory structure is similar to the HCP directory structure. The connectomes are saved as sparse matrices that can be loaded using [scipy.sparse.load_npz](https://docs.scipy.org/doc/scipy-1.1.0/reference/generated/scipy.sparse.load_npz.html).
+All the individual high-resolution connectomes (as well as the atlas-based counterparts) produced with our pipeline could be accessed in our [publicly accessible S3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html). The directory structure is similar to the HCP directory structure. The high-resolution connectomes are saved as sparse matrices that can be loaded using [scipy.sparse.load_npz](https://docs.scipy.org/doc/scipy-1.1.0/reference/generated/scipy.sparse.load_npz.html). The atlas-based connectomes are saved as numpy matrices the can be loaded using [numpy.load](https://docs.scipy.org/doc/numpy/reference/generated/numpy.load.html).
 
 ---
 
@@ -165,4 +165,4 @@ As well as the data mentioned above;
 - We have provided the label indices for the two atlases used in our study.
 - We have also provided the exact subject IDs comprising our **test**, and **retest** datasets
 
-These are provided as json files located in [`./data/supplementary`](https://github.com/sina-mansour/neural-identity/blob/master/data/suplementary).
+These are provided as json files located in [`./data/supplementary/`](https://github.com/sina-mansour/neural-identity/blob/master/data/suplementary/).
