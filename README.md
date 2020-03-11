@@ -140,9 +140,9 @@ The localized uniqueness measures mapped for different neuroimaging modalities (
 
 There are 3 different sets of uniqueness maps in total:
 
-- The high-resolution uniqueness maps are in: [`./data/uniqueness/High resolution/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/High resolution/)
+- The high-resolution uniqueness maps are in: [`./data/uniqueness/High resolution/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/High%20resolution/)
 - The atlas-level uniqueness maps generated from Glasser and Gordon atlas are in: [`./data/uniqueness/glasser/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/glasser/) and [`./data/uniqueness/gordon/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/gordon/) respectively
-- The holistic approach (high-resolution maps averaged on atlases) can be found in: [`./data/uniqueness/Holistic mean/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/Holistic mean/)
+- The holistic approach (high-resolution maps averaged on atlases) can be found in: [`./data/uniqueness/Holistic mean/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/Holistic%20mean/)
 
 ---
 
