@@ -25,7 +25,7 @@ This repository contains:
 - Surface maps of the expressed neural uniqueness from different modalities: [`./data/uniqueness/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/)
 - Individual high-resolution connectomes can be downloaded from [our public s3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html)
 - Sparse mask used to sparsify functional connectomes: [`./data/sparse_mask/`](https://github.com/sina-mansour/neural-identity/blob/master/data/sparse_mask/)
-- Supplementary information of our indexing and labels: [`./data/supplementary`](https://github.com/sina-mansour/neural-identity/blob/master/data/suplementary)
+- Supplementary information of our indexing and labels: [`./data/supplementary/`](https://github.com/sina-mansour/neural-identity/blob/master/data/supplementary/)
 
 ### Other:
 
