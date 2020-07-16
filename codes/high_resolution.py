@@ -405,12 +405,12 @@ def _local_distances_to_smoothing_coefficients(local_distance, sigma):
     therefore, each row sum is unit (1). sigma comes from the smoothing
     variance.
     """
-    # add zeros to the diagonal
-    local_distance_with_diagonals = local_distance + (sparse.eye(local_distance.shape[0], dtype=local_distance.dtype).tocsr() * 0)
-
     # apply gaussian transform
-    gaussian = -(local_distance_with_diagonals.power(2) / (2 * (sigma ** 2)))
+    gaussian = -(local_distance.power(2) / (2 * (sigma ** 2)))
     np.exp(gaussian.data, out=gaussian.data)
+
+    # add ones to the diagonal
+    gaussian += sparse.eye(gaussian.shape[0], dtype=gaussian.dtype).tocsr()
 
     # normalize rows of matrix
     return sklearn.preprocessing.normalize(gaussian, norm='l1')
