@@ -2,9 +2,9 @@
 
 ---
 
-Here, you may find the resources (code and data) used for our article on neural correlates of identity and behavior. All resources are provided as complementary to the following article:
+Here, you may find the resources (code and data) used for our article on [**High-resolution connectomic fingerprints: Mapping neural identity and behavior**](https://www.sciencedirect.com/science/article/pii/S1053811920311800). All resources are provided as complementary to the following article:
 
-**reference to the article will be added here ...**
+**Mansour, L. Sina, et al. "High-resolution connectomic fingerprints: mapping neural identity and behavior." *NeuroImage* (2021): 117695.**
 
 ---
 
@@ -23,7 +23,7 @@ This repository contains:
 ### Data:
 
 - Surface maps of the expressed neural uniqueness from different modalities: [`./data/uniqueness/`](https://github.com/sina-mansour/neural-identity/blob/master/data/uniqueness/)
-- Individual high-resolution connectomes can be downloaded from [our public s3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html)
+- Individual high-resolution connectomes can be downloaded from [this public s3 bucket](https://swift.rc.nectar.org.au/v1/AUTH_ee5989f4c9184ea29012bb124cd3dff0/connectome_storage/index.html)
 - Sparse mask used to sparsify functional connectomes: [`./data/sparse_mask/`](https://github.com/sina-mansour/neural-identity/blob/master/data/sparse_mask/)
 - Supplementary information of our indexing and labels: [`./data/supplementary/`](https://github.com/sina-mansour/neural-identity/blob/master/data/supplementary/)
 
