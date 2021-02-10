@@ -1,4 +1,4 @@
-# Neural correlates of identity and behavior
+# High-resolution connectomic fingerprints: Mapping neural identity and behavior
 
 ---
 
