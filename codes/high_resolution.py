@@ -41,18 +41,27 @@ def _load_sparse(file_path):
     return sparse.load_npz(file_path)
 
 
+def _time_str(mode='abs', base=None):
+    if mode == 'rel':
+        return str(datetime.timedelta(seconds=(time.time() - base)))
+    if mode == 'raw':
+        return time.time()
+    if mode == 'abs':
+        return time.asctime(time.localtime(time.time()))
+
+
 def _print_log(message, mode='info'):
     if mode == 'info':
-        print ('{}: \033[0;32m[INFO]\033[0m {}'.format(time_str(), message))
+        print ('{}: \033[0;32m[INFO]\033[0m {}'.format(_time_str(), message))
     if mode == 'err':
-        print ('{}: \033[0;31m[ERROR]\033[0m {}'.format(time_str(), message))
+        print ('{}: \033[0;31m[ERROR]\033[0m {}'.format(_time_str(), message))
         quit()
     # if mode == 'progress':
     #     print (' ' * 79, end="\r")
-    #     print ('{}: \033[0;32m[PROGRESS]\033[0m {}'.format(time_str(), message), end="\r")
+    #     print ('{}: \033[0;32m[PROGRESS]\033[0m {}'.format(_time_str(), message), end="\r")
     # if mode == 'end_progress':
     #     print (' ' * 79, end="\r")
-    #     print ('{}: \033[0;32m[PROGRESS RESULT]\033[0m {}'.format(time_str(), message))
+    #     print ('{}: \033[0;32m[PROGRESS RESULT]\033[0m {}'.format(_time_str(), message))
     sys.stdout.flush()
 
 
@@ -82,7 +91,8 @@ def _max_smoothing_distance(sigma, epsilon, dim):
     return the distance of the smoothing kernel that will miss a epsilon proportion of the
     smoothed signal energy
     """
-    return sigma * (-stats.norm.ppf((1 - (1 - epsilon) ** (1 / dim)) / 2))
+    # return sigma * (-stats.norm.ppf((1 - (1 - epsilon) ** (1 / dim)) / 2))
+    return sigma * (-2 * np.log(epsilon)) ** (1 / dim)
 
 
 def _diagonal_stack_sparse_matrices(m1, m2):
