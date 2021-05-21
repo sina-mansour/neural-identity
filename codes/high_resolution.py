@@ -340,7 +340,7 @@ def _get_streamline_incidence(start_dists,
 
 def _local_geodesic_distances(max_distance, vertices, triangles):
     # distances = gdist.local_gdist_matrix(vertices.astype(np.float64), triangles.astype(np.int32), max_distance)
-    distances = utils._run_in_separate_process(
+    distances = _run_in_separate_process(
         gdist.local_gdist_matrix,
         vertices.astype(np.float64),
         triangles.astype(np.int32),
